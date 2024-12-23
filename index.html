@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPX Example Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-space">
+        <div class="logo">
+          <img src="source/logo.avif" alt="SPX Logo" />
+        </div>
+        <h1>Create a demo HTML page that behaves like shown here.</h1>
+        <p>
+          A name strap - graphic that can be controlled with
+          <code>play()</code>, <code>update()</code>, and
+          <code>stop()</code> functions.
+        </p>
+      </div>
+
+      <div id="name-strap" class="name-strap" style="visibility: hidden">
+        <index id="name-text" />
+      </div>
+      <div class="btn">
+        <button class="btn-play" onclick="playBtnClick()">PLAY</button>
+        <button class="btn-change" onclick="changeBtnClick()">
+          CHANGE TEXT
+        </button>
+        <button class="btn-stop" onclick="stopBtnClick()">STOP</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #003300, #030703);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  float: left;
+}
+
+.name-strap {
+  background: white;
+  color: black;
+  padding: 20px;
+  font-size: 32px;
+  margin: 20px auto;
+  width: 40%;
+  height: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn {
+  margin: 70px;
+}
+
+.head-space {
+  margin: 50px 50px 100px 150px;
+}
+
+.btn button {
+  margin: 40px;
+  padding: 10px 50px;
+  font-size: 21px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #4f4f4f;
+  color: #ffffff;
+}
+
+/* .btn button:hover {
+  background: #444;
+  color: white;
+} */
+
+code {
+  color: orange;
+}
+
+.btn-play:active {
+  background-color: rgb(2, 151, 17);
+  color: white;
+}
+
+.btn-change:active {
+  background-color: yellow;
+  color: white;
+}
+
+.btn-stop:active {
+  background-color: #982208;
+  color: white;
+}
+/*
+.btn-play:active .name-strap {
+  background-color: #982208;
+}
+
+.btn-change:active .name-strap {
+  background-color: #982208;
+}
+
+.btn-stop:active .name-strap {
+  background-color: #982208;
+}
+*/
