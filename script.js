@@ -2,40 +2,50 @@ let nameStrap = document.getElementById("name-strap");
 let nameText = document.getElementById("name-text");
 let animation;
 
+const applyStyles = (styles) => {
+  Object.assign(nameStrap.style, styles);
+};
+
 function changeBtnClick() {
   nameText.innerHTML = "Amarathunga";
-  animation.pause();
+  if (animation) animation.pause();
 }
 
 function playBtnClick() {
-  nameText.innerHTML = "Venusha";
-  nameStrap.style.visibility = "visible";
-  nameStrap.style.backgroundColor = "#982208";
-  nameStrap.style.color = "white";
-  nameStrap.style.position = "relative";
+  document.getElementById("temp-id").classList.remove("temp-class");
 
+  nameText.innerHTML = "Venusha";
+
+  applyStyles({
+    visibility: "visible",
+    backgroundColor: "#982208",
+    color: "white",
+    position: "relative",
+  });
+
+  if (animation) animation.pause();
   animation = anime({
     targets: "#name-strap",
     easing: "easeInOutQuint",
-    // translateX: ["0%", "40%"],
-    width: ["0%", "40%"],
+    width: ["0", "250"],
     duration: 2000,
   });
 }
 
 function stopBtnClick() {
-  if (animation) animation.pause(); // Pause any ongoing animation
+  if (animation) animation.pause();
 
   animation = anime({
     targets: "#name-strap",
     easing: "easeInOutQuint",
-    width: ["40%", "0%"], // Shrink width
-    translateX: ["-40%", "-10%"], // Shift position to create a left-to-right effect
-    duration: 3000,
+    width: ["250", "0"],
+    translateX: [0, 250],
+    duration: 2000,
     complete: function () {
-      nameStrap.style.visibility = "hidden";
-      nameStrap.style.left = "-20px";
-      nameStrap.style.transform = "translateX(0)"; // Reset translateX after animation
+      applyStyles({
+        visibility: "hidden",
+        transform: "translateX(0)",
+      });
     },
   });
 }

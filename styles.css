@@ -20,17 +20,6 @@ body {
   float: left;
 }
 
-/* #center {
-  width: max-content;
-  max-width: 100%;
-  margin: 50%;
-  text-align: center;s
-} */
-
-#center {
-  position: relative;
-}
-
 .name-strap {
   background: #ffffff;
   color: #000000;
@@ -42,9 +31,13 @@ body {
   line-height: 50px;
   overflow: hidden;
   position: absolute;
-  left: 25%;
-  visibility: hidden; /* Initially hidden */
-  transition: background-color 0.3s linear, color 0.3s ease;
+  left: 40%;
+  visibility: hidden;
+}
+
+.temp-class {
+  height: 70px;
+  display: flex;
 }
 
 .btn {
@@ -69,11 +62,6 @@ button {
   color: #ffffff;
 }
 
-/* .btn button:hover {
-  background: #444;
-  color: white;
-} */
-
 code {
   color: orange;
 }
@@ -92,16 +80,3 @@ code {
   background-color: #982208;
   color: white;
 }
-/*
-.btn-play:active .name-strap {
-  background-color: #982208;
-}
-
-.btn-change:active .name-strap {
-  background-color: #982208;
-}
-
-.btn-stop:active .name-strap {
-  background-color: #982208;
-}
-*/
