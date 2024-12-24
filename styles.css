@@ -20,17 +20,31 @@ body {
   float: left;
 }
 
-.name-strap {
-  background: white;
-  color: black;
-  padding: 20px;
-  font-size: 32px;
-  margin: 20px auto;
-  width: 40%;
-  height: 30px;
-  text-transform: uppercase;
-  overflow: hidden;
+/* #center {
+  width: max-content;
+  max-width: 100%;
+  margin: 50%;
+  text-align: center;s
+} */
+
+#center {
   position: relative;
+}
+
+.name-strap {
+  background: #ffffff;
+  color: #000000;
+  padding: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 0%, fixed;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  visibility: hidden; /* Initially hidden */
+  transition: background-color 0.3s linear, color 0.3s ease;
 }
 
 .btn {

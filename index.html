@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPX Example Demo</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,9 +21,12 @@
         </p>
       </div>
 
-      <div id="name-strap" class="name-strap" style="visibility: hidden">
-        <index id="name-text" />
+      <div id="center">
+        <div id="name-strap" class="name-strap" style="visibility: hidden">
+          <div id="name-text"></div>
+        </div>
       </div>
+
       <div class="btn">
         <button class="btn-play" onclick="playBtnClick()">PLAY</button>
         <button class="btn-change" onclick="changeBtnClick()">
@@ -31,8 +35,6 @@
         <button class="btn-stop" onclick="stopBtnClick()">STOP</button>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script> -->
     <script src="script.js"></script>
   </body>
 </html>
